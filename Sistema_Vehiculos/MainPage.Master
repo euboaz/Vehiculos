@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainPage.master.cs" Inherits="Sistema_Vehiculos.MainPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="CSS/MainPage.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <ul>
+  <li><asp:HyperLink ID="HL_Usuarios" runat="server" href="Users.aspx">Usuarios</asp:HyperLink></li>
+  <li><asp:HyperLink ID="HL_Placas" runat="server" href="Placas.aspx">Placas</asp:HyperLink></li>
+  <li><asp:HyperLink ID="HL_Reportes" runat="server" href="Reporte.aspx">Reportes</asp:HyperLink></li>
+  <li style="float:right"><asp:HyperLink class="active" ID="HL_CerrarSesion" runat="server" href="index.aspx">Cerrar Sesión</asp:HyperLink></li>
+</ul>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
